@@ -1,0 +1,1 @@
+Mini-projeto para check de hábitos entre amigos.
