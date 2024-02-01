@@ -25,6 +25,6 @@ def set_title() -> str:
     Returns:
         title: title of habits checks
     """
-    day = get_day()
-    return str(day) + "/365"
+    day = get_day(get_date())
+    return str(day) + "/366"
 
