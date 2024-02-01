@@ -1,13 +1,16 @@
 from datetime import datetime
 
-def get_day() -> int:
+def get_date():
+    now = datetime.now()
+    return now
+
+def get_day(date) -> int:
     """
     
     Get the current day as a int number
     
     """
-    now = datetime.now()
-    day = now.strftime("%d")
+    day = date.strftime("%d")
     return int(day)
 
 def set_title() -> str:
@@ -22,8 +25,6 @@ def set_title() -> str:
     Returns:
         title: title of habits checks
     """
-    day = get_day()
+    day = get_day(get_date())
     return str(day) + "/365"
 
-
-# assert set_title() == "9/365"
