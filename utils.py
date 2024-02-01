@@ -10,7 +10,7 @@ def get_day(date) -> int:
     Get the current day as a int number
     
     """
-    day = date.strftime("%d")
+    day = date.strftime("%j")
     return int(day)
 
 def set_title() -> str:
@@ -25,6 +25,6 @@ def set_title() -> str:
     Returns:
         title: title of habits checks
     """
-    day = get_day(get_date())
+    day = get_day()
     return str(day) + "/365"
 
